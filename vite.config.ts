@@ -30,7 +30,7 @@ export default defineConfig({
                     "vue-router": ["onBeforeRouteLeave"],
                 }
             ],
-            dirs: ["./src/network", "./src/components", "./src/store"],
+            dirs: ["./src/components"],
             vueTemplate: true,
             // 生成auto-import.d.ts声明文件
             dts: "src/types/auto-import.d.ts",
@@ -43,8 +43,9 @@ export default defineConfig({
         })
     ],
     resolve: {
-        extensions: ['.js','.vue','.json','.ts'],
+        extensions: [".js",".vue",".json",".ts"],
         alias: {
+            // eslint-disable-next-line no-undef
             "@": resolve(__dirname, "./src")
         }
     }

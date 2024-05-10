@@ -16,7 +16,8 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "./.eslintrc-auto-import.json"
   ],
   "globals": {
     "console": true,
@@ -85,6 +86,7 @@
     "camelcase": "warn",//强制使用骆驼拼写法命名约定
     "arrow-body-style": "warn",//要求箭头函数体使用大括号
     "capitalized-comments": "warn",//强制注释首字母大写
-    "quotes": "error"//强制使用一致的反勾号、双引号或单引号
+    "quotes": "error",//强制使用一致的反勾号、双引号或单引号
+    "@typescript-eslint/no-explicit-any": "off"
   }
 }

@@ -12,11 +12,3 @@ export interface TPage<T> {
     current: number;
     records: T[];
 }
-
-export interface TPageData<T> {
-    code: number;
-    data: TPage<T>;
-    msg: string;
-    errorCode?: number;
-    timestamp?: number;
-}
