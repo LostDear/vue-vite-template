@@ -30,7 +30,7 @@ export default defineConfig({
                     "vue-router": ["onBeforeRouteLeave"],
                 }
             ],
-            dirs: ["./src/api", "./src/components", "./src/store"],
+            dirs: ["./src/network", "./src/components", "./src/store"],
             vueTemplate: true,
             // 生成auto-import.d.ts声明文件
             dts: "src/types/auto-import.d.ts",
@@ -43,6 +43,7 @@ export default defineConfig({
         })
     ],
     resolve: {
+        extensions: ['.js','.vue','.json','.ts'],
         alias: {
             "@": resolve(__dirname, "./src")
         }

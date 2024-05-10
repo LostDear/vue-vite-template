@@ -1,10 +1,10 @@
-<script setup>
-const systemInfo = systemStore();
+<script setup lang="ts">
+
 </script>
 
 <template>
 <div>
-  {{ systemInfo.count }}
+
 </div>
 </template>
 
